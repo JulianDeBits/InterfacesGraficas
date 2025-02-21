@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InterfacesGraficas
 {
-    public partial class Login: Form
+    public partial class PantallaPrincipal: Form
     {
-        public Login()
+        public PantallaPrincipal()
         {
             InitializeComponent();
         }
