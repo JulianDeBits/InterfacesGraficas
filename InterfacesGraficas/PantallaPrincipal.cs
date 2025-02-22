@@ -48,6 +48,16 @@ namespace InterfacesGraficas
                 }
                     
             }
-        }
+
+            if (dgvTablaTareas.Columns[e.ColumnIndex].Name == "dgvEditar")
+            {
+                DataGridViewRow fila = dgvTablaTareas.CurrentRow;
+                String tareaSeleccionada = fila.Cells[0].Value.ToString();
+                String descripcionSeleccionada = fila.Cells[1].Value.ToString();
+                String estadoSeleccionado = fila.Cells[2].Value.ToString();
+                editarRegistro editar = new editarRegistro(fila, tareaSeleccionada, descripcionSeleccionada, estadoSeleccionado);
+                editar.Show();
+            }
+        } 
     }
 }

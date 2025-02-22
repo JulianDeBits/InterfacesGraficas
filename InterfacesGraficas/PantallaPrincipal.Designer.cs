@@ -50,7 +50,7 @@
             // 
             this.txtNombreTarea.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreTarea.Location = new System.Drawing.Point(44, 188);
-            this.txtNombreTarea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreTarea.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreTarea.Multiline = true;
             this.txtNombreTarea.Name = "txtNombreTarea";
             this.txtNombreTarea.Size = new System.Drawing.Size(158, 36);
@@ -64,7 +64,7 @@
             "Pendiente",
             "Completado"});
             this.cboxEstadoTarea.Location = new System.Drawing.Point(44, 437);
-            this.cboxEstadoTarea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxEstadoTarea.Margin = new System.Windows.Forms.Padding(2);
             this.cboxEstadoTarea.Name = "cboxEstadoTarea";
             this.cboxEstadoTarea.Size = new System.Drawing.Size(158, 36);
             this.cboxEstadoTarea.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.txtDescripcionTarea.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcionTarea.Location = new System.Drawing.Point(44, 265);
-            this.txtDescripcionTarea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcionTarea.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcionTarea.Multiline = true;
             this.txtDescripcionTarea.Name = "txtDescripcionTarea";
             this.txtDescripcionTarea.Size = new System.Drawing.Size(158, 134);
@@ -83,7 +83,7 @@
             // 
             this.iconoApp.Image = global::InterfacesGraficas.Properties.Resources.IconoTareas;
             this.iconoApp.Location = new System.Drawing.Point(44, 17);
-            this.iconoApp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconoApp.Margin = new System.Windows.Forms.Padding(2);
             this.iconoApp.Name = "iconoApp";
             this.iconoApp.Size = new System.Drawing.Size(142, 137);
             this.iconoApp.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.btnAgregarTarea.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAgregarTarea.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarTarea.Location = new System.Drawing.Point(76, 485);
-            this.btnAgregarTarea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarTarea.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarTarea.Name = "btnAgregarTarea";
             this.btnAgregarTarea.Size = new System.Drawing.Size(83, 40);
             this.btnAgregarTarea.TabIndex = 4;
@@ -112,7 +112,7 @@
             this.dgvEditar,
             this.dgvBorrar});
             this.dgvTablaTareas.Location = new System.Drawing.Point(231, 17);
-            this.dgvTablaTareas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvTablaTareas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvTablaTareas.Name = "dgvTablaTareas";
             this.dgvTablaTareas.RowHeadersWidth = 51;
             this.dgvTablaTareas.RowTemplate.Height = 24;
@@ -188,6 +188,8 @@
             this.dgvEditar.Name = "dgvEditar";
             this.dgvEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dgvEditar.Text = "";
+            this.dgvEditar.ToolTipText = "Eliminar";
             // 
             // dgvBorrar
             // 
@@ -210,7 +212,7 @@
             this.Controls.Add(this.txtDescripcionTarea);
             this.Controls.Add(this.cboxEstadoTarea);
             this.Controls.Add(this.txtNombreTarea);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PantallaPrincipal";
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
