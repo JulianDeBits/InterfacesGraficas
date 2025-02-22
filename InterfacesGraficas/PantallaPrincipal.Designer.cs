@@ -181,8 +181,6 @@
             this.dgvBorrar.HeaderText = "Borrar";
             this.dgvBorrar.MinimumWidth = 6;
             this.dgvBorrar.Name = "dgvBorrar";
-            this.dgvBorrar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBorrar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dgvBorrar.Width = 125;
             // 
             // PantallaPrincipal

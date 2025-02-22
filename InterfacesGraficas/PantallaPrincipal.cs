@@ -32,5 +32,22 @@ namespace InterfacesGraficas
                 cboxEstadoTarea.SelectedIndex = 0;
             }
         }
+
+
+        private void dgvTablaTareas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+            if (e.ColumnIndex == dgvTablaTareas.Columns["dgvBorrar"].Index && e.RowIndex >= 0)
+            {
+                
+                var confirmResult = MessageBox.Show("¿Estás seguro de que deseas eliminar esta fila?", "Confirmar eliminación", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                   
+                    dgvTablaTareas.Rows.RemoveAt(e.RowIndex);
+                }
+            }
+        }
     }
 }
