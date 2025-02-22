@@ -216,7 +216,7 @@
             this.Name = "PantallaPrincipal";
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PantallaPrincipal";
+            this.Text = "Pantalla Principal";
             ((System.ComponentModel.ISupportInitialize)(this.iconoApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaTareas)).EndInit();
             this.ResumeLayout(false);

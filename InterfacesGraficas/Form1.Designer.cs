@@ -41,7 +41,7 @@
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(60, 247);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Multiline = true;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(162, 28);
@@ -51,7 +51,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(60, 314);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -85,7 +85,7 @@
             this.btnEntrar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnEntrar.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(109, 373);
-            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(80, 46);
             this.btnEntrar.TabIndex = 5;
@@ -97,7 +97,7 @@
             // 
             this.iconoPrincipal.Image = global::InterfacesGraficas.Properties.Resources.inicio;
             this.iconoPrincipal.Location = new System.Drawing.Point(80, 39);
-            this.iconoPrincipal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconoPrincipal.Margin = new System.Windows.Forms.Padding(2);
             this.iconoPrincipal.Name = "iconoPrincipal";
             this.iconoPrincipal.Size = new System.Drawing.Size(141, 126);
             this.iconoPrincipal.TabIndex = 6;
@@ -114,11 +114,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuario);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Ingreso";
             ((System.ComponentModel.ISupportInitialize)(this.iconoPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

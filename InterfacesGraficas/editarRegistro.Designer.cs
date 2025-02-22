@@ -113,8 +113,9 @@
             this.btnEditarTarea.Name = "btnEditarTarea";
             this.btnEditarTarea.Size = new System.Drawing.Size(95, 40);
             this.btnEditarTarea.TabIndex = 14;
-            this.btnEditarTarea.Text = "Editar";
+            this.btnEditarTarea.Text = "Guardar";
             this.btnEditarTarea.UseVisualStyleBackColor = false;
+            this.btnEditarTarea.Click += new System.EventHandler(this.btnEditarTarea_Click);
             // 
             // btnCancelarModificacio
             // 
@@ -127,6 +128,7 @@
             this.btnCancelarModificacio.TabIndex = 13;
             this.btnCancelarModificacio.Text = "Cancelar";
             this.btnCancelarModificacio.UseVisualStyleBackColor = false;
+            this.btnCancelarModificacio.Click += new System.EventHandler(this.btnCancelarModificacio_Click);
             // 
             // editarRegistro
             // 
@@ -143,7 +145,7 @@
             this.Name = "editarRegistro";
             this.Opacity = 0.97D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "editarRegistro";
+            this.Text = "Editar Registro";
             this.ResumeLayout(false);
             this.PerformLayout();
 

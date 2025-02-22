@@ -20,7 +20,7 @@ namespace InterfacesGraficas
 
         private void btnAgregarTarea_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombreTarea.Text) && string.IsNullOrEmpty(txtNombreTarea.Text) && string.IsNullOrEmpty(txtNombreTarea.Text))
+            if (string.IsNullOrEmpty(txtNombreTarea.Text) && string.IsNullOrEmpty(txtDescripcionTarea.Text) && string.IsNullOrEmpty(cboxEstadoTarea.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos");
             }
@@ -44,20 +44,36 @@ namespace InterfacesGraficas
             );
                 if (result == DialogResult.Yes)
                 {
-                    dgvTablaTareas.Rows.RemoveAt(e.RowIndex);
+                    try
+                    {
+                        dgvTablaTareas.Rows.RemoveAt(e.RowIndex);
+                    } catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                    
                 }
                     
             }
 
             if (dgvTablaTareas.Columns[e.ColumnIndex].Name == "dgvEditar")
             {
-                DataGridViewRow fila = dgvTablaTareas.CurrentRow;
-                String tareaSeleccionada = fila.Cells[0].Value.ToString();
-                String descripcionSeleccionada = fila.Cells[1].Value.ToString();
-                String estadoSeleccionado = fila.Cells[2].Value.ToString();
-                editarRegistro editar = new editarRegistro(fila, tareaSeleccionada, descripcionSeleccionada, estadoSeleccionado);
-                editar.Show();
+                try
+                {
+                    DataGridViewRow fila = dgvTablaTareas.CurrentRow;
+                    String tareaSeleccionada = fila.Cells[0].Value.ToString();
+                    String descripcionSeleccionada = fila.Cells[1].Value.ToString();
+                    String estadoSeleccionado = fila.Cells[2].Value.ToString();
+                    editarRegistro editar = new editarRegistro(fila, tareaSeleccionada, descripcionSeleccionada, estadoSeleccionado);
+                    editar.Show();
+
+                }  catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+
+                }
+
             }
-        } 
+        }
     }
 }
