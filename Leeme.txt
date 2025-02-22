@@ -1,3 +1,16 @@
+Para poder Acceder, el usuario es "admin" y la contraseña es "admin"
+
+Ademas de eso....
+
+                    ||
+                    ||
+                    ||
+                    ||
+                  \    /
+                    \/
+
 Este es otro Repositorio en el cual implemente base de datos tanto en el login, como en las tareas.
+
+Importante * hay que saber configurar la base de datos con Sql Server para poder hacerla funcionar.
 
 https://github.com/JulianDeBits/InterfacesGraficasDB.git
