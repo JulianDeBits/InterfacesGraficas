@@ -40,7 +40,7 @@ namespace InterfacesGraficas
 
         private void btnEditarTarea_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txt2NombreTarea.Text) && string.IsNullOrEmpty(txt2DescripcionTarea.Text) && string.IsNullOrEmpty(cbox2EstadoTarea.Text))
+            if (string.IsNullOrEmpty(txt2NombreTarea.Text) || string.IsNullOrEmpty(txt2DescripcionTarea.Text) || string.IsNullOrEmpty(cbox2EstadoTarea.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos");
             }

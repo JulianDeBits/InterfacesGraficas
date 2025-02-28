@@ -20,7 +20,7 @@ namespace InterfacesGraficas
 
         private void btnAgregarTarea_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombreTarea.Text) && string.IsNullOrEmpty(txtDescripcionTarea.Text) && string.IsNullOrEmpty(cboxEstadoTarea.Text))
+            if (string.IsNullOrEmpty(txtNombreTarea.Text) || string.IsNullOrEmpty(txtDescripcionTarea.Text) || string.IsNullOrEmpty(cboxEstadoTarea.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos");
             }
